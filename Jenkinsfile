@@ -4,8 +4,8 @@ pipeline {
     stage('moving to diff folder') {
       steps {
         sh 'dir'
-        dir('test_movinf') {
-          sh 'pwd'
+        dir('test_moving') {
+          sh 'dir'
         }
       }
     }
