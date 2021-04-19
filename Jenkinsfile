@@ -6,6 +6,7 @@ pipeline {
         sh 'dir'
         dir('test_moving') {
           sh 'dir'
+          sh 'cat name.txt'
         }
       }
     }
