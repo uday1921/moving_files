@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('moving to diff folder') {
       steps {
-        sh 'pwd'
+        sh 'dir'
       }
     }
 
