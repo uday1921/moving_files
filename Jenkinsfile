@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('moving to diff folder') {
       steps {
-        sh "echo ${registry}"
+        bat "echo ${registry}"
       }
     }
 
