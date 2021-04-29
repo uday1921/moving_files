@@ -1,13 +1,12 @@
 pipeline {
   agent any
+  environment {
+    registry = "uday kumar ${BUILD_Number}"
+  }
   stages {
     stage('moving to diff folder') {
       steps {
-        sh 'dir'
-        dir('test_moving') {
-          sh 'dir'
-          sh 'cat name.txt'
-        }
+        sh "echo ${registry}"
       }
     }
 
